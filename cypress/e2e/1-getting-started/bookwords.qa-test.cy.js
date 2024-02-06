@@ -23,4 +23,9 @@ describe('Bookwords QA test', () => {
    it('title', () => {
         cy.title().should('include', '词书')
     })
+
+    it('login', () => {
+        cy.get('#tologin').click();
+            cy.title().should('include', '登录')
+        })
 })
