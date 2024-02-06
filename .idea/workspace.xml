@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3654c56-8a45-48a5-a34c-c010c4072eeb" name="Changes" comment="1.0.4 add more files">
-      <change afterPath="$PROJECT_DIR$/cypress/e2e/1-getting-started/bookwords.qa-test.cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a3654c56-8a45-48a5-a34c-c010c4072eeb" name="Changes" comment="1.1.0 test bookwords homepage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707178118702</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.1.0 test bookwords homepage">
+      <option name="closed" value="true" />
+      <created>1707179482052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707179482052</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +108,7 @@
     <MESSAGE value="1.0.2 fix workflow folder name" />
     <MESSAGE value="1.0.3 enable workflow in github" />
     <MESSAGE value="1.0.4 add more files" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.4 add more files" />
+    <MESSAGE value="1.1.0 test bookwords homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1.0 test bookwords homepage" />
   </component>
 </project>
