@@ -1,16 +1,3 @@
-/// <reference types="cypress" />
-
-// Welcome to Cypress!
-//
-// This spec file contains a variety of sample tests
-// for a todo list app that are designed to demonstrate
-// the power of writing tests in Cypress.
-//
-// To learn more about how Cypress works and
-// what makes it such an awesome testing tool,
-// please read our getting started guide:
-// https://on.cypress.io/introduction-to-cypress
-
 describe('Bookwords QA test', () => {
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
@@ -18,14 +5,33 @@ describe('Bookwords QA test', () => {
     // Since we want to visit the same URL at the start of all our tests,
     // we include it in our beforeEach function so that it runs before each test
     cy.visit('https://qa.bookwords.cn')
+//    cy.visit('https://localhost')
   })
 
    it('title', () => {
         cy.title().should('include', '词书')
-    })
+   })
 
-    it('login', () => {
+    it('tologin', () => {
         cy.get('#tologin').click();
             cy.title().should('include', '登录')
-        })
+            cy.url().should('include','tologin')
+    })
+
+
+      it('login', () => {
+          cy.get('#tologin').click();
+          cy.title().should('include', '登录')
+          cy.url().should('include','tologin')
+          cy.get("input[name=username]").type("joe2");
+          cy.get("input[name=password]").type("123");
+          cy.get("form").submit();
+
+          cy.url().should("include", "/wordsearch");
+          cy.get("#login-id").should("contain", "joe2");
+      })
+
+
+
+
 })
