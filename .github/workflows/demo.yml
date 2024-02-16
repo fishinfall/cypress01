@@ -17,5 +17,5 @@ jobs:
     steps:
       - name: run multi-line script
         run: |
-          each "Hello Windows"
+          echo "Hello Windows"
           Get-Date
