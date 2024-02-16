@@ -11,3 +11,11 @@ jobs:
         run: |
           echo "hello world"
           date
+
+  build_on_windows:
+    runs-on: windows-latest
+    steps:
+      - name: run multi-line script
+        run: |
+          each "Hello Windows"
+          Get-Date
