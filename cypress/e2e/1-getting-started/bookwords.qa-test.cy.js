@@ -25,6 +25,13 @@ describe('Bookwords QA test', () => {
         cy.get("#resultWordEn").should("contain", "frequent");
     })
 
+    it('search a word by API', () => {
+        cy.get("input[name=searchWords]").type("cobbler");
+        cy.get("form").submit();
+        cy.url().should("include", "/wordsearch");
+        cy.get("#resultWordEn").should("contain", "cobbler");
+    })
+
 
       it('login', () => {
           cy.get('#tologin').click();
