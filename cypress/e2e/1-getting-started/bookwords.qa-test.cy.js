@@ -18,6 +18,13 @@ describe('Bookwords QA test', () => {
             cy.url().should('include','tologin')
     })
 
+    it('search a word from all books', () => {
+        cy.get("input[name=searchWords]").type("frequent");
+        cy.get("form").submit();
+        cy.url().should("include", "/wordsearch");
+        cy.get("#resultWordEn").should("contain", "frequent");
+    })
+
 
       it('login', () => {
           cy.get('#tologin').click();
@@ -26,7 +33,6 @@ describe('Bookwords QA test', () => {
           cy.get("input[name=username]").type("joe2");
           cy.get("input[name=password]").type("123");
           cy.get("form").submit();
-
           cy.url().should("include", "/wordsearch");
           cy.get("#login-id").should("contain", "joe2");
       })
